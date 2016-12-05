@@ -6,7 +6,7 @@
  * @author Dave
  *
  */
-public class Raumschiff {
+public class Raumschiff implements CanFly{
 	
 	private double length;
 
@@ -26,6 +26,15 @@ public class Raumschiff {
 	 */
 	public void setLength(double length) {
 		this.length = length;
+	}
+
+	/* (non-Javadoc)
+	 * @see CanFly#fly()
+	 */
+	@Override
+	public void fly() {
+		System.out.println("Flying with default speed.");
+		
 	}
 	
 
